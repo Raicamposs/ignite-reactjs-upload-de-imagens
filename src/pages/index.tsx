@@ -35,7 +35,7 @@ export default function Home(): JSX.Element {
         })
         .then(res => res.data),
     {
-      getNextPageParam: (lastPage, allPages) => lastPage.after,
+      getNextPageParam: lastPage => lastPage.after,
     }
   );
 
